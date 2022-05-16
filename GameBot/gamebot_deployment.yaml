@@ -25,7 +25,7 @@ spec:
       name: gamebot      
   minReadySeconds: 5
   strategy:
-    type: Recreate
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -47,4 +47,6 @@ spec:
           - name: "PICK_STRATEGY"
             value: "RANDOM"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-            value: "ba33a70a-7081-47da-ad93-3c738d8dc6ce"            
+            value: "ba33a70a-7081-47da-ad93-3c738d8dc6ce"
+          - name: "FF_BETS"
+            value: "1"
