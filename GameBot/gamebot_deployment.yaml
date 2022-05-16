@@ -45,6 +45,6 @@ spec:
           - name: "PORT"
             value: "8080"
           - name: "PICK_STRATEGY"
-            value: "FIXED"
+            value: "RANDOM"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
             value: "ba33a70a-7081-47da-ad93-3c738d8dc6ce"            
